@@ -1,46 +1,10 @@
-title: Easing Function 정리
+title: Easing Function 요약 정리
 description:
-  적절한 Easing 함수를 선택하여 보다 사실적인 애니메이션으로 만들자.
+  올바른 Easing function을 선택하여 보다 사실적인 애니메이션으로 만들자.
 share:
   Easing function은 애니메이션의 속도를 지정함으로써 움직임을 보다 자연스럽게 만듭니다.
-  실제 물체는 일정한 속도로만 움직이지는 않으며, 갑자기 움직이기 시작하거나 멈추지 않습니다.
-  이 페이지는 적절한 Easing function을 선택하도록 돕는 것을 목적으로 하고 있습니다.
+  실제 물체는 일정한 속도로만 움직이지는 않으며, 바로 움직이기 시작하거나 멈추지 않습니다.
+  이 페이지에서는 올바른 Easing function의 선택을 돕는 것을 목적으로 하고 있습니다.
 
 about: !!format
   ~Easing function~은 시간 경과에 따른 변화율을 지정합니다.
-
-  실제 물체는 갑자기 움직이기 시작하거나 멈추지 않으며, 일정한 속도로만 움직이는 일은 대부분 없습니다.
-  만약 서랍을 연다고 가정할 때, 처음에는 빠르게 열다가 그대로 나오도록 속도를 늦춥니다.
-  무언가가 바닥에 떨어질 때, 물체는 처음에 아래로 가속하고 바닥에 부딪친 후 다시 튕겨 올라옵니다.
-
-  이 페이지는 적절한 Easing function을 선택하도록 돕는 것을 목적으로 하고 있습니다.
-
-easings:
-  css: 어디서든 사용 가능
-  js: JavaScript에서만 가능
-
-howtos:
-  name: easing 이름
-  curve: easing의 Bézier 곡선
-  js: !!code
-    jQuery와 ^jQuery Easing Plugin^을 같이 사용하는 것이 Easing을 사용한 애니메이션을 가장 간단하게 표현할 수 있습니다.
-    `.animate` 함수의 세번째 인자로 `easeInCirc` 같은 Easing의 이름을 넣어주거나, `easing` 옵션의 값을 사용하면 됩니다.
-  scss: !!code
-    Saas/SCSS 또한 애니메이션을 표현할 수 있습니다! Compass는 `transition`과 `animation` 속성 앞의 접두어를 붙이지 않아도 되도록 해주고, <nobr>^Compass Ceaser^</nobr> 플러그인은 정확한 Bézier 곡선을 명시하지 않고도 Easing function의 이름으로 사용할 수 있게 해줍니다.
-  css: !!code
-    CSS의 `transition`과 `animation`에서 Easing function을 지정할 수 있습니다.
-  css_bad:
-    안타깝게도 모든 Easing을 지원하지 않아 Bézier 곡선 같은 Easing 함수를 직접 만들어 지정해야합니다.
-  css_help:
-    Easing을 선택해서 Bézier 곡선을 표시합니다.
-
-easing:
-  all_easings: 全てのeasing
-  no_css: !!code
-    CSS에서 지원하지 않습니다.
-    하지만 JS에서는 사용 가능하며, `@keyframes` CSS Animation으로도 사용할 수 있습니다.
-  edit: cubic-bezier.com 에서 ^편집하기^
-
-opensource:
-  title: 오픈 소스
-  translate: 이 사이트의 ^번역^을 도와주세요.
